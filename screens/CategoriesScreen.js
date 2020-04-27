@@ -10,8 +10,8 @@ import HeaderButton from '../components/HeaderButton';
 
 import CategoryGridTile from '../components/CategoryGridTile'
 import { CATEGORIES } from '../data/dummy-data';
-import Colors from '../constants/Colors';
-import CategoryMealsScreen from './CategoryMealsScreen';
+
+
 
 const CategoriesScreen = props => {
   const renderGridItem = itemData => {
@@ -42,7 +42,7 @@ const CategoriesScreen = props => {
 CategoriesScreen.navigationOptions = (navData) => {
   return{
     headerTitle: 'Meal Categories' ,
-    headerLeft :
+    headerLeft : () =>
       <HeaderButtons  HeaderButtonComponent = {HeaderButton} >
         <Item 
           title= "Menu"
